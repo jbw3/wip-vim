@@ -12,6 +12,8 @@ syn match wipIntegerConstants /\<\(0b[01_]\+\|0o[0-7_]\+\|[0-9][0-9_]*\|0x[0-9A-
 syn keyword wipBoolConstants false true
 syn region wipStrings start=/"/ end=/"/ contains=wipStringsEscape
 syn match wipStringsEscape contained /\\\([\\'"nrt]\|x[0-9A-Fa-f]\{2\}\|u{[0-9A-Fa-f]\{1,8\}}\)/
+syn match wipOperators '<<\|>>>\|>>\|==\|!=\|<=\|>=\|&&\|||\|+\|-\|*\|/\|%\|&\||\|\^\|!\|<\|>'
+syn match wipOperators '<<=\|>>>=\|>>=\|+=\|-=\|*=\|/=\|%=\|&=\||=\|\^=\|='
 
 syn sync minlines=200
 syn sync maxlines=500
@@ -28,3 +30,4 @@ hi def link wipIntegerConstants Constant
 hi def link wipBoolConstants    Constant
 hi def link wipStrings          Constant
 hi def link wipStringsEscape    Special
+hi def link wipOperators        Operator
