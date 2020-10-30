@@ -2,9 +2,9 @@ if exists("b:current_syntax")
     finish
 endif
 
-syn keyword wipKeywords extern fun in var
+syn keyword wipKeywords break continue extern fun in return var
 syn keyword wipStructure struct
-syn keyword wipConditional break continue elif else for if while
+syn keyword wipConditional elif else for if while
 syn keyword wipTypes bool i8 i16 i32 i64 isize str u8 u16 u32 u64 usize
 syn match wipLineComment /#.*$/
 syn region wipBlockComment start=/#!/ end=/!#/ contains=wipBlockComment
