@@ -5,7 +5,7 @@ endif
 syn keyword wipKeywords break cast const continue extern fun in return var
 syn keyword wipStructure struct
 syn keyword wipConditional elif else for if while
-syn keyword wipTypes bool i8 i16 i32 i64 isize str u8 u16 u32 u64 usize
+syn keyword wipTypes bool i8 i16 i32 i64 isize str type u8 u16 u32 u64 usize
 syn match wipLineComment /#.*$/
 syn region wipBlockComment start=/#!/ end=/!#/ contains=wipBlockComment
 syn match wipIntegerConstants /\<\(0b[01_]\+\|0o[0-7_]\+\|[0-9][0-9_]*\|0x[0-9A-Fa-f_]\+\)\>/
